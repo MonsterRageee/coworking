@@ -1,0 +1,48 @@
+/* svg animation */
+
+.ContaineR{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.ContaineR .icon{
+    display: flex;
+    background-color: #06181f;
+
+}
+.ContaineR .icon path{
+
+    fill: transparent;
+    stroke-width: 10;
+    stroke: #31e8ff;
+
+}
+
+.ContaineR .icon.chicken path{
+    stroke-dasharray: 1890;
+    stroke-dashoffset: 1890;
+}
+
+.ContaineR .icon.chicken:hover path{
+   animation: animate-chicken 2s linear forwards; 
+}
+
+@keyframes animate-chicken{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 1560;
+    }
+    80%{
+        stroke-dashoffset: 3120;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 3120;
+        fill: #31e8ff;
+    }
+}
