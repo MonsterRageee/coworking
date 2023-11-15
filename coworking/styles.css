@@ -9,13 +9,11 @@ html {
 }
 
 body {
-    /* background-image: url(https://media.istockphoto.com/id/1217723755/photo/sand-background.jpg?s=612x612&w=0&k=20&c=JyjxvBK7-zEePoaqjqr7KC6i4u2sjS4dirPHyB9pLGk=); */
     background-size: cover;
     font-family: 'Montserrat', sans-serif;
     background-color: #fffdff;
     line-height: 1.6rem;
     margin: 0;
-
 }
 
 header {
@@ -95,7 +93,7 @@ main {
 /*cookies*/
 
 .container {
-    width: 1600px;
+    width: 100%;
     margin: auto;
 }
 
@@ -355,21 +353,6 @@ main {
     flex-direction: column;
 }
 
-/* socials */
-
-.socialscontainer {
-    display: flex;
-    width: 100%;
-    height: max-content;
-    margin-top: 5rem;
-}
-
-.socials {
-    display: flex;
-    font-weight: 500;
-    color: #fffdff;
-    margin-left: 1rem;
-}
 
 /* extra contact me knop */
 .buttoncontainer2 {
@@ -464,12 +447,13 @@ main {
     max-width: 100%;
     justify-content: space-evenly;
     background-color: brown;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     color: #ffff;
     text-transform: uppercase;
-    
+    padding-top: 2rem;
+    padding-bottom: 2rem;}
 
+.ondernav{
+    margin-bottom: -2rem;
 }
 .ondernav ul :hover,
 .ondernav ul :focus-visible{
